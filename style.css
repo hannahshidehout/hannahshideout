@@ -9,19 +9,22 @@ body {
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center;
-        position: relative;
+        display: flex;          
+        flex-direction: column;   
+       align-items: center;     
+       padding-top: 20px;         
     }
 /* Heading styling */
 h1 {
-    background-color: white;         /* white box */
-    color: black;                    /* text color inside the box */
-    display: inline-block;           /* shrink box to fit text */
-    padding: 15px 30px;              /* space inside the box */
-    margin: 20px auto 0 auto;        /* top margin, center horizontally */
-    text-align: center;              /* center text inside box */
+    background-color: white;         
+    color: black;                   
+    display: inline-block;          
+    padding: 15px 30px;             
+    margin-top: 20px;         
+    text-align: center;
     font-size: 3em;
-    border-radius: 10px;             /* optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow for depth */
+    border-radius: 10px;            
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
 }
 /* Paragraph styling */
 p {

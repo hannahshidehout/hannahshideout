@@ -30,16 +30,3 @@ p {
     font-size: 1.5em;
     margin-top: 30px; /* space below heading */
 }
-/* Text styling */
-h1 {
-    color: white;
-    text-align: center;
-    margin-top: 20vh; 
-    font-size: 3em;    
-}
-
-p {
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
-}

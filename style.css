@@ -31,8 +31,8 @@ h1 {
 }
 /* Paragraph styling */
 p {
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 1.5em;
-    margin-top: 30px; /* space below heading */
+    font-size: 2em;
+    margin-top: 24px; /* space below heading */
 }

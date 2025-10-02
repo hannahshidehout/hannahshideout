@@ -41,5 +41,5 @@ p {
     text-align: center;
     font-size: 1.8em;
     font-weight: 400;
-    margin-top: 1px; /* space below heading */
+    margin-top: 0px; /* space below heading */
 }

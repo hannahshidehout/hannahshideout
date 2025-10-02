@@ -33,16 +33,24 @@ h1 {
 p {
     color: white;
     text-shadow: 
-        -1px -1px 0 black,  
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black,
-    -2px  0   0 black,
-     2px  0   0 black,
-     0   -2px 0 black,
-     0    2px 0 black; /* creates a black outline */
+       -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black,
+        -2px  0   0 black,
+         2px  0   0 black,
+         0   -2px 0 black,
+         0    2px 0 black,
+        -3px -3px 0 black,
+         3px -3px 0 black,
+        -3px  3px 0 black,
+         3px  3px 0 black,
+        -4px  0   0 black,
+         4px  0   0 black,
+         0   -4px 0 black,
+         0    4px 0 black; /* creates a black outline */
     text-align: center;
     font-size: 2em;
     font-weight: 700; /* Bold */
-    margin-top: 15px; /* space below heading */
+    margin-top: 5px; /* space below heading */
 }

@@ -32,6 +32,7 @@ h1 {
     color: black;                   
     display: inline-block;                     
     margin-top: 20px;         
+    margin-bottom: 0px;
     text-align: center;
     font-size: 3em;
 }
@@ -41,5 +42,7 @@ p {
     text-align: center;
     font-size: 1.8em;
     font-weight: 400;
-    margin-top: 0px; /* space below heading */
+       margin-top:0px;  
+       margin-bottom:20px;
+ 
 }

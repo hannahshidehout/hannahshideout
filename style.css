@@ -18,7 +18,7 @@ body {
 /* White box container */
 .content-box {
     background-color: white;
-    padding: 20px 40px;
+    padding: 10px 20px;
     margin-top: 20px;
     text-align: center;
     border-radius: 10px;
@@ -41,5 +41,5 @@ p {
     text-align: center;
     font-size: 1.8em;
     font-weight: 400;
-    margin-top: 5px; /* space below heading */
+    margin-top: 1px; /* space below heading */
 }

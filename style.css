@@ -15,42 +15,31 @@ body {
        padding-top: 20px;         
 
     }
+/* White box container */
+.content-box {
+    background-color: white;
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: inline-block; /* keeps the box snug around text */
+}
 /* Heading styling */
 h1 {
     font-family: 'Atma', sans-serif;
-    font-weight: 700; /* Bold */
-    background-color: white;         
+    font-weight: 700; /* Bold */         
     color: black;                   
-    display: inline-block;          
-    padding: 15px 30px;             
+    display: inline-block;                     
     margin-top: 20px;         
     text-align: center;
     font-size: 3em;
-    border-radius: 10px;            
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
 }
 /* Paragraph styling */
 p {
-    color: white;
-    text-shadow: 
-       -1px -1px 0 black,  
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black,
-        -2px  0   0 black,
-         2px  0   0 black,
-         0   -2px 0 black,
-         0    2px 0 black,
-        -3px -3px 0 black,
-         3px -3px 0 black,
-        -3px  3px 0 black,
-         3px  3px 0 black,
-        -4px  0   0 black,
-         4px  0   0 black,
-         0   -4px 0 black,
-         0    4px 0 black; /* creates a black outline */
+    color: black;
     text-align: center;
-    font-size: 2em;
-    font-weight: 700; /* Bold */
+    font-size: 1.8em;
+    font-weight: 400;
     margin-top: 5px; /* space below heading */
 }

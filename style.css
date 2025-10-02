@@ -34,6 +34,6 @@ p {
     color: black;
     text-align: center;
     font-size: 2em;
+    font-weight: 700; /* Bold */
     margin-top: 15px; /* space below heading */
-      font-weight: bold;
 }

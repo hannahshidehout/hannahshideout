@@ -8,7 +8,7 @@ html, body {
 
 /* Background image settings */
 body {
-    background-image: url("https://github.com/hannahshidehout/hannahshideout/raw/8c1c63666b0a3ea36ef662a22b1a1751654c3f18/scratch.jpg");
+    background-image: url("https://github.com/hannahshidehout/hannahshideout/raw/27dca0db91e07eb15131605841da0b1a13767384/bl.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -44,17 +44,21 @@ body {
     object-fit: cover;
     position: relative;
     z-index: 1;
-    box-shadow: 0 0 4px #FFD700,
-                0 0 8px #FFD700;
+
+    /* Outline when idle */
+    box-shadow: 0 0 4px #07526E,
+                0 0 8px #07526E;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-pic:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 12px #FFD700,
-                0 0 20px #FFD700,
-                0 0 35px #FFD700,
-                0 0 50px #FFD700;
+    /* Glow on hover */
+    box-shadow: 0 0 12px #07526E,
+                0 0 20px #07526E,
+                0 0 35px #07526E,
+                0 0 50px #07526E;
 }
 
 /* White box container */
@@ -84,10 +88,11 @@ p {
     margin: 5px 0 0 0;
 }
 
-/* Speech bubble without triangle */
+/* Speech bubble without triangle, white color */
 .speech-bubble {
     position: absolute;
-    background: #fffbe0;
+    background: white;
+    color: black;
     padding: 8px 14px;
     border-radius: 10px;
     font-family: 'Atma', sans-serif;
@@ -98,5 +103,4 @@ p {
     left: -30px; /* slightly to left of pic */
     z-index: 2;
     white-space: nowrap;  /* keeps text on one line */
-
 }

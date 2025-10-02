@@ -1,48 +1,62 @@
+/* Reset default margins/padding */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif; /* default for page except heading */
 }
+
 /* Background image settings */
 body {
-        background-image: url("https://github.com/hannahshidehout/hannahshideout/raw/8c1c63666b0a3ea36ef662a22b1a1751654c3f18/scratch.jpg");
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;          
-        flex-direction: column;   
-       align-items: center;     
-       padding-top: 20px;         
+    background-image: url("https://github.com/hannahshidehout/hannahshideout/raw/8c1c63666b0a3ea36ef662a22b1a1751654c3f18/scratch.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* space from top */
+}
 
-    }
+/* Page header container (profile pic + white box) */
+.page-header {
+    display: flex;
+    align-items: center;       /* vertically aligns pic and box */
+    justify-content: center;   /* centers container on page */
+    gap: 20px;                 /* space between pic and box */
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 120px;              /* adjust size */
+    height: 120px;
+    border-radius: 50%;        /* circular */
+    object-fit: cover;
+}
+
 /* White box container */
 .content-box {
     background-color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 15px 25px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    display: inline-block; /* keeps the box snug around text */
+    display: inline-block;
 }
+
 /* Heading styling */
 h1 {
     font-family: 'Atma', sans-serif;
-    font-weight: 700; /* Bold */         
-    color: black;                   
-    display: inline-block;                     
-    margin-top: 20px;         
-    margin-bottom: 0px;
-    text-align: center;
+    font-weight: 700;
+    color: black;
+    margin: 0;
     font-size: 3em;
 }
+
 /* Paragraph styling */
 p {
     color: black;
-    text-align: center;
     font-size: 1.8em;
     font-weight: 400;
-       margin-top:0px;  
-       margin-bottom:20px;
- 
+    margin: 5px 0 0 0; /* small space above paragraph */
 }

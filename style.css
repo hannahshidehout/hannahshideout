@@ -36,7 +36,7 @@ p {
         -1px -1px 0 black,  
          1px -1px 0 black,
         -1px  1px 0 black,
-         1px  1px 0 black; /* creates a white outline */
+         1px  1px 0 black; /* creates a black outline */
     text-align: center;
     font-size: 2em;
     font-weight: 700; /* Bold */

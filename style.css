@@ -8,7 +8,7 @@ html, body {
 
    /* Solid background instead of image */
    background-color: #8ED4E8;
-   background-image: radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px);
+   background-image: radial-gradient(rgba(255,255,255,0.6) 1.32px, transparent 1px);
    background-size: 20px 20px;
 
    display: flex;

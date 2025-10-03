@@ -149,3 +149,10 @@ p {
     margin-top: 10px;
     font-weight: bold;
 }
+.content-box,
+.guestbook-box,
+.speech-bubble {
+    background: #ffffff; /* solid opaque white */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* softer shadow so less “glow” */
+}
+

@@ -9,23 +9,31 @@
 </head>
 <body>
 
+  <!-- Page header with profile -->
   <div class="page-header">
-
-    <!-- Wrap profile pic + bubble in a container -->
     <div class="profile-container">
-      <img src="https://github.com/hannahshidehout/hannahshideout/raw/7f9be6d0b1e67c231f53fae1293abfb61cea9958/A4560B27-053F-4879-99C8-5F265009999B_1_201_a.jpg" 
-           alt="Hannah's Profile" 
-           class="profile-pic">
+      <img src="https://github.com/hannahshidehout/hannahshideout/raw/7f9be6d0b1e67c231f53fae1293abfb61cea9958/A4560B27-053F-4879-99C8-5F265009999B_1_201_a.jpg" alt="Hannah's Profile" class="profile-pic">
       <div class="speech-bubble">Hi! This is me, Hannah ♡</div>
     </div>
 
-    <!-- White box centered -->
     <div class="content-box">
       <h1>Welcome to Hannah's Hideout</h1>
       <p>You found my hidden corner!</p>
     </div>
-
   </div>
 
+  <!-- Guestbook section -->
+  <div class="guestbook-box">
+    <h2>Sign my Guestbook!</h2>
+    <form id="guestbook-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <textarea name="message" placeholder="Leave a nice note or tip..." required></textarea>
+      <button type="submit">Sign</button>
+    </form>
+    <p id="response-msg"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="guestbook.js"></script>
 </body>
 </html>

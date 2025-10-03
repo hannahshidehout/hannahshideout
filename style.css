@@ -1,8 +1,10 @@
 /* Reset and base styles */
 html, body {
-   margin: 0;
+    margin: 0;
     padding: 0;
     font-family: 'Atma', sans-serif;
+    height: 100%;
+    min-height: 100vh; /* ensures full viewport height */
     background-image: url("https://raw.githubusercontent.com/hannahshidehout/hannahshideout/main/bl.jpg");
     background-size: cover;
     background-position: center;
@@ -94,40 +96,43 @@ p {
     white-space: nowrap;
 }
 
-/* Guestbook box */
+/* Guestbook box in top-right corner (smaller) */
 .guestbook-box {
+    position: fixed;        /* fix it relative to viewport */
+    top: 20px;              /* distance from top */
+    right: 20px;            /* distance from right */
+    width: 250px;           /* smaller width */
+    padding: 12px;          /* slightly smaller padding */
     background: white;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     text-align: center;
+    z-index: 10;            /* stay above background */
 }
 
 /* Guestbook form inputs */
 .guestbook-box input,
 .guestbook-box textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-family: 'Atma', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 /* Guestbook button */
 .guestbook-box button {
-    margin-top: 12px;
-    padding: 10px 20px;
+    margin-top: 8px;
+    padding: 6px 12px;
     background: #044057;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .guestbook-box button:hover {
@@ -136,6 +141,7 @@ p {
 
 /* Response message */
 #response-msg {
-    margin-top: 10px;
+    margin-top: 6px;
     font-weight: bold;
+    font-size: 0.9em;
 }

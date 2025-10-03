@@ -12,7 +12,9 @@
   <!-- Page header with profile -->
   <div class="page-header">
     <div class="profile-container">
-      <img src="https://github.com/hannahshidehout/hannahshideout/raw/7f9be6d0b1e67c231f53fae1293abfb61cea9958/A4560B27-053F-4879-99C8-5F265009999B_1_201_a.jpg" alt="Hannah's Profile" class="profile-pic">
+      <img src="https://github.com/hannahshidehout/hannahshideout/raw/7f9be6d0b1e67c231f53fae1293abfb61cea9958/A4560B27-053F-4879-99C8-5F265009999B_1_201_a.jpg" 
+           alt="Hannah's Profile" 
+           class="profile-pic">
       <div class="speech-bubble">Hi! This is me, Hannah ♡</div>
     </div>
 
@@ -22,12 +24,12 @@
     </div>
   </div>
 
-  <!-- Guestbook section -->
+  <!-- Guestbook box (top-right fixed) -->
   <div class="guestbook-box">
     <h2>Sign my Guestbook!</h2>
     <form id="guestbook-form">
       <input type="text" name="name" placeholder="Your name" required>
-      <textarea name="message" placeholder="Leave a nice note or tip..." required></textarea>
+      <textarea name="message" placeholder="Leave a nice note..." rows="3" required></textarea>
       <button type="submit">Sign</button>
     </form>
     <p id="response-msg"></p>

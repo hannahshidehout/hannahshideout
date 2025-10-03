@@ -3,8 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Atma', sans-serif;
-    height: 100%;
-    min-height: 100vh; /* ensures full viewport height */
     background-image: url("https://raw.githubusercontent.com/hannahshidehout/hannahshideout/main/bl.jpg");
     background-size: cover;
     background-position: center;
@@ -12,6 +10,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 /* Page header container */
@@ -30,14 +29,14 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(-40px); /* moves pic + bubble left */
+    transform: translateX(-40px);
 }
 
 /* Profile picture */
 .profile-pic {
-    width: 120px;
+    width: 120px;              
     height: 120px;
-    border-radius: 50%;
+    border-radius: 50%;        
     object-fit: cover;
     position: relative;
     z-index: 1;
@@ -96,43 +95,47 @@ p {
     white-space: nowrap;
 }
 
-/* Guestbook box in top-right corner (smaller) */
+/* Guestbook box in top-right corner (aligned with content-box) */
 .guestbook-box {
-    position: fixed;        /* fix it relative to viewport */
-    top: 20px;              /* distance from top */
-    right: 20px;            /* distance from right */
-    width: 250px;           /* smaller width */
-    padding: 12px;          /* slightly smaller padding */
+    position: fixed;
+    top: 50px;               /* aligns with content-box top */
+    right: 15px;
+    width: 200px;
+    padding: 10px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     text-align: center;
-    z-index: 10;            /* stay above background */
+    z-index: 10;
+    font-size: 0.85em;
+    box-sizing: border-box;  /* ensures padding doesn’t exceed width */
 }
 
-/* Guestbook form inputs */
+/* Guestbook form inputs (limit width and handle overflow) */
 .guestbook-box input,
 .guestbook-box textarea {
     width: 100%;
-    padding: 6px;
-    margin-top: 6px;
-    border-radius: 6px;
+    max-width: 180px;       /* ensures inputs fit inside box */
+    padding: 5px;
+    margin-top: 4px;
+    border-radius: 5px;
     border: 1px solid #ccc;
     font-family: 'Atma', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    box-sizing: border-box; /* padding included in width */
 }
 
 /* Guestbook button */
 .guestbook-box button {
-    margin-top: 8px;
-    padding: 6px 12px;
+    margin-top: 6px;
+    padding: 5px 10px;
     background: #044057;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 .guestbook-box button:hover {
@@ -141,7 +144,7 @@ p {
 
 /* Response message */
 #response-msg {
-    margin-top: 6px;
+    margin-top: 5px;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }

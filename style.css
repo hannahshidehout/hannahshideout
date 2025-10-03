@@ -99,7 +99,7 @@ p {
 .guestbook-box {
     position: fixed;
     top: 50px;               /* aligns with content-box top */
-    right: 15px;
+    right: 40px;
     width: 200px;
     padding: 10px;
     background: white;

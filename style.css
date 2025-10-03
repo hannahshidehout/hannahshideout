@@ -1,21 +1,15 @@
-/* Reset default margins/padding */
+/* Reset and base styles */
 html, body {
-    height: 100%;
-    margin: 0;
+   margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Background image settings */
-body {
-    background-image: url("https://github.com/hannahshidehout/hannahshideout/raw/27dca0db91e07eb15131605841da0b1a13767384/bl.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
+    font-family: 'Atma', sans-serif;
+    background-image: url("https://raw.githubusercontent.com/hannahshidehout/hannahshideout/main/bl.jpg");
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
 }
 
 /* Page header container */
@@ -25,43 +19,40 @@ body {
     justify-content: center;
     gap: 20px;
     position: relative;
+    padding-top: 50px;
 }
 
-/* Container for profile pic + bubble to move together */
+/* Profile container for pic + bubble */
 .profile-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(-40px); /* moves pic + bubble left */
+    transform: translateX(-40px);
 }
 
 /* Profile picture */
 .profile-pic {
-    width: 120px;              
+    width: 120px;
     height: 120px;
-    border-radius: 50%;        
+    border-radius: 50%;
     object-fit: cover;
     position: relative;
     z-index: 1;
-
-    /* Outline when idle */
-    box-shadow: 0 0 4px #07526E,
-                0 0 8px #07526E;
-
+    box-shadow: 0 0 4px #044057,
+                0 0 8px #044057;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-pic:hover {
     transform: scale(1.1);
-    /* Glow on hover */
-    box-shadow: 0 0 12px #07526E,
-                0 0 20px #07526E,
-                0 0 35px #07526E,
-                0 0 50px #07526E;
+    box-shadow: 0 0 12px #044057,
+                0 0 20px #044057,
+                0 0 35px #044057,
+                0 0 50px #044057;
 }
 
-/* White box container */
+/* White box */
 .content-box {
     background-color: white;
     padding: 15px 25px;
@@ -71,7 +62,7 @@ body {
     display: inline-block;
 }
 
-/* Heading styling */
+/* Headings & paragraphs */
 h1 {
     font-family: 'Atma', sans-serif;
     font-weight: 700;
@@ -80,7 +71,6 @@ h1 {
     font-size: 3em;
 }
 
-/* Paragraph styling */
 p {
     color: black;
     font-size: 1.8em;
@@ -88,7 +78,7 @@ p {
     margin: 5px 0 0 0;
 }
 
-/* Speech bubble without triangle, white color */
+/* Speech bubble */
 .speech-bubble {
     position: absolute;
     background: white;
@@ -98,9 +88,61 @@ p {
     font-family: 'Atma', sans-serif;
     font-size: 1em;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-
-    top: 110px;  /* slightly below pic */
-    left: -30px; /* slightly to left of pic */
+    top: 110px;
+    left: -30px;
     z-index: 2;
-    white-space: nowrap;  /* keeps text on one line */
+    white-space: nowrap;
+}
+
+/* Guestbook box */
+.guestbook-box {
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Guestbook form inputs */
+.guestbook-box input,
+.guestbook-box textarea {
+    width: 90%;             /* smaller than full box */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Atma', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Make the textarea taller but not huge */
+.guestbook-box textarea {
+    min-height: 80px;
+    resize: vertical; /* user can resize if needed */
+}
+
+/* Guestbook button */
+.guestbook-box button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #044057;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.guestbook-box button:hover {
+    background: #07526E;
+}
+
+/* Response message */
+#response-msg {
+    margin-top: 10px;
+    font-weight: bold;
 }

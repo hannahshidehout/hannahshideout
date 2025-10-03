@@ -1,16 +1,19 @@
 /* Reset and base styles */
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Atma', sans-serif;
-    background-image: url("https://raw.githubusercontent.com/hannahshidehout/hannahshideout/main/bl.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-family: 'Atma', sans-serif;
+   height: 100%;
+   min-height: 100vh;
+
+   /* Solid background instead of image */
+   background-color: #8ED4E8;
+   background-image: radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px);
+   background-size: 20px 20px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 /* Page header container */
@@ -34,9 +37,9 @@ html, body {
 
 /* Profile picture */
 .profile-pic {
-    width: 120px;              
+    width: 120px;
     height: 120px;
-    border-radius: 50%;        
+    border-radius: 50%;
     object-fit: cover;
     position: relative;
     z-index: 1;
@@ -95,11 +98,11 @@ p {
     white-space: nowrap;
 }
 
-/* Guestbook box in top-right corner (aligned with content-box) */
+/* Guestbook box in top-right corner */
 .guestbook-box {
     position: fixed;
-    top: 50px;               /* aligns with content-box top */
-    right: 40px;
+    top: 50px;           
+    right: 40px;        
     width: 200px;
     padding: 10px;
     background: white;
@@ -108,43 +111,44 @@ p {
     text-align: center;
     z-index: 10;
     font-size: 0.85em;
-    box-sizing: border-box;  /* ensures padding doesn’t exceed width */
+    box-sizing: border-box;
 }
 
-/* Guestbook form inputs (limit width and handle overflow) */
+.guestbook-box h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
 .guestbook-box input,
 .guestbook-box textarea {
     width: 100%;
-    max-width: 180px;       /* ensures inputs fit inside box */
-    padding: 5px;
-    margin-top: 4px;
-    border-radius: 5px;
+    padding: 6px;
+    margin-top: 6px;
+    border-radius: 6px;
     border: 1px solid #ccc;
     font-family: 'Atma', sans-serif;
-    font-size: 0.85em;
-    box-sizing: border-box; /* padding included in width */
+    font-size: 0.9em;
+    box-sizing: border-box;
 }
 
-/* Guestbook button */
 .guestbook-box button {
-    margin-top: 6px;
-    padding: 5px 10px;
+    margin-top: 8px;
+    padding: 8px 15px;
     background: #044057;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 .guestbook-box button:hover {
     background: #07526E;
 }
 
-/* Response message */
 #response-msg {
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.9em;
 }

@@ -154,29 +154,32 @@ p {
     font-size: 0.9em;
 }
 /* About Me box */
-
 .about-box {
     background: white;
-    padding: 12px 16px;
+    padding: 10px 14px;       /* tighter padding */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    max-width: 240px;   /* smaller width */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    max-width: 200px;         /* narrower box */
     text-align: left;
-    margin-top: 25px;
+    margin-top: 20px;
 
-    /* aligned under/left */
+    /* move left */
     align-self: flex-start;
-    margin-left: 40px;
+    margin-left: -70px;        /* closer to the left edge */
 }
 
 .about-box h2 {
     margin-top: 0;
-    font-size: 1.2em;   /* slightly smaller */
+    font-size: 1.1em;
     font-weight: 700;
     color: #044057;
 }
 
 .about-box p {
+    font-size: 0.85em;        /* slightly smaller text */
+    color: #333;
+    line-height: 1.4;
+}
     font-size: 0.9em;   /* slightly smaller text */
     color: #333;
     line-height: 1.4;

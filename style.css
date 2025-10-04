@@ -165,7 +165,7 @@ p {
 
     /* move left */
     align-self: flex-start;
-    margin-left: -70px;        /* closer to the left edge */
+    margin-left: -100px;        /* closer to the left edge */
 }
 
 .about-box h2 {

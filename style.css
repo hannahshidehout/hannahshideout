@@ -166,6 +166,7 @@ p {
     /* move left */
     align-self: flex-start;
     margin-left: -240px;        /* closer to the left edge */
+     margin-top: 50px;    /* ⬅️ increase this number to lower it */
 }
 
 .about-box h2 {
